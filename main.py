@@ -63,7 +63,7 @@ commands = dns_commands + base_commands + nat_log_syslog_commands
 
 # Execute configuration
 def configure_mikrotik():
-    print("\n🔌 Connecting to MikroTik...")
+    print("\n Connecting to MikroTik...")
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
