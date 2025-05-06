@@ -71,7 +71,7 @@ def configure_mikrotik():
         ssh.connect(host, username=username, password=password, port=22)
         shell = ssh.invoke_shell()
         for cmd in commands:
-            print(f"🛠️  Executing: {cmd}")
+            print(f" Executing: {cmd}")
             shell.send(cmd + '\n')
             time.sleep(0.6)
         print("\n Configuration completed successfully. Logs will be sent to the syslog server if enabled.")
